@@ -5,9 +5,19 @@
 		<servlet-class>HelloWorldServlet</servlet-class>
 	</servlet>
 
+	<servlet>
+		<servlet-name>MyDateServlet</servlet-name>
+		<servlet-class>DateServlet</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>MyHelloWorldServlet</servlet-name>
-		<url-pattern>/index.html</url-pattern>
+		<url-pattern>/hello/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MyDateServlet</servlet-name>
+		<url-pattern>/date.html</url-pattern>
 	</servlet-mapping>
 
 </web-app>
